@@ -84,6 +84,7 @@ input[type="submit"] {
 }
 i {
   @extend %in-b;
+  vertical-align: middle;
 }
 p {
   line-height: 1.6;
@@ -108,7 +109,7 @@ p {
       @extend %in-b;
       width: pr(30px);
       height: pr(30px);
-      background: url(../images/tel.png) no-repeat;
+      background: url(https://img.thea.cn/public/platform/thea/202001/hbj/zhy-wap/images/tel.png) no-repeat;
       background-size: 100% 100%;
     }
     span {
@@ -138,13 +139,13 @@ p {
 .zhy-title {
   font-size: pr(44px);
   font-weight: bold;
-  line-height: pr(44px);
+  line-height: 1.4;
   color: #333333;
   text-align: center;
 }
 .zhy-notion {
   padding: pr(50px) $padding-size pr(40px);
-  .zhy-title{
+  .zhy-title {
     margin-bottom: pr(20px);
   }
   p {
@@ -153,7 +154,7 @@ p {
   .notion-form {
     padding-top: pr(266px);
     margin-top: pr(20px);
-    background: url(../images/bg_1.png) no-repeat top;
+    background: url(https://img.thea.cn/public/platform/thea/202001/hbj/zhy-wap/images/bg_1.png) no-repeat top;
     background-size: 100% auto;
   }
   .sign-in {
@@ -171,7 +172,7 @@ p {
     font-weight: bold;
     text-align: center;
     margin-bottom: pr(30px);
-    background: url(../images/icon_2.png) no-repeat center;
+    background: url(https://img.thea.cn/public/platform/thea/202001/hbj/zhy-wap/images/icon_2.png) no-repeat center;
     background-size: auto 100%;
   }
   input {
@@ -198,7 +199,7 @@ p {
 }
 .zhy-good {
   padding: pr(50px) $padding-size pr(10px);
-  background: url(../images/bg_2.png) no-repeat;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/zhy-wap/images/bg_2.png) no-repeat;
   background-size: 100% 100%;
   .zhy-title {
     color: #fff;
@@ -230,20 +231,403 @@ p {
           color: #ff925a;
           margin-bottom: pr(10px);
         }
-        p{
+        p {
           color: #fff;
         }
       }
-      &:nth-of-type(1){
-        .li-r{
+      &:nth-of-type(1) {
+        .li-r {
           width: 60%;
         }
       }
-      &:nth-of-type(2){
-        .li-r{
+      &:nth-of-type(2) {
+        .li-r {
           width: 54%;
         }
       }
     }
+  }
+}
+.zhy-schools {
+  padding: pr(50px) $padding-size 0;
+  .zhy-title {
+    padding: 0 pr(100px);
+  }
+  .zhy-subtitle {
+    color: #999999;
+    padding-top: pr(20px);
+  }
+  .schools-cont {
+    padding-top: pr(30px);
+    .tab-head {
+      margin-bottom: pr(30px);
+      ul {
+        @extend .space-between;
+      }
+      li {
+        width: 22%;
+        height: pr(80px);
+        line-height: pr(80px);
+        background-color: #dcdcdc;
+        border-radius: pr(10px);
+        font-size: pr(30px);
+        text-align: center;
+        &.cur {
+          background-color: #ff8559;
+          color: #fff;
+        }
+      }
+    }
+    .tab-detail {
+      ul {
+        @extend .space-between;
+      }
+      li {
+        width: 48%;
+        background-color: #ffffff;
+        border: solid 1px #dddddd;
+        box-sizing: border-box;
+        margin-bottom: 4%;
+        img {
+          width: 100%;
+        }
+      }
+      .li-title {
+        font-size: pr(30px);
+        line-height: pr(30px);
+        font-weight: bold;
+        text-align: center;
+        padding: pr(20px) pr(10px);
+        @extend %one;
+      }
+      .li-txt {
+        min-height: pr(110px);
+        padding: 0 pr(20px);
+        box-sizing: border-box;
+        line-height: 1.4;
+        .txt-row {
+          @include ells(2);
+        }
+        .key {
+          color: #666666;
+        }
+      }
+      .li-btn {
+        display: block;
+        height: pr(64px);
+        line-height: pr(64px);
+        background-image: linear-gradient(90deg, #ff8559 0%, #ffaf5f 100%);
+        border-radius: pr(32px);
+        font-size: pr(30px);
+        color: #ffffff;
+        margin: pr(30px) pr(20px);
+        text-align: center;
+      }
+    }
+    .detail-item {
+      display: none;
+      margin-bottom: pr(40px);
+      &.cur {
+        display: block;
+      }
+      .item-more {
+        display: block;
+        font-size: pr(30px);
+        line-height: pr(46px);
+        text-align: center;
+        span {
+          vertical-align: middle;
+        }
+        .icon {
+          width: pr(22px);
+          height: pr(12px);
+          background: url(https://img.thea.cn/public/platform/thea/202001/hbj/zhy-wap/images/icon_1.png) no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+}
+.zhy-enrol {
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/zhy-wap/images/bg_3.png) no-repeat;
+  background-size: 100% 100%;
+  padding: pr(50px) $padding-size pr(28px);
+  box-sizing: border-box;
+  .zhy-title {
+    color: #fff;
+  }
+  .enrol-cont {
+    padding-top: pr(50px);
+    ul {
+      @extend .space-between;
+    }
+    li {
+      width: 48%;
+      background-color: #222b9d;
+      padding: 0 0 pr(30px);
+      box-sizing: border-box;
+      text-align: center;
+      margin-bottom: 4%;
+    }
+    .li-num {
+      display: block;
+      width: pr(84px);
+      height: pr(84px);
+      line-height: pr(84px);
+      font-size: pr(50px);
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #ff925a;
+      margin: pr(-10px) auto 0;
+    }
+    .li-title {
+      color: #ff925a;
+      font-size: pr(32px);
+      font-weight: bold;
+      line-height: pr(36px);
+      padding: pr(30px) 0 pr(10px);
+    }
+    p {
+      color: #ffffff;
+    }
+    .sign-in {
+      input {
+        width: 100%;
+        height: pr(80px);
+        line-height: pr(80px);
+        background-color: #ffffff;
+        border-radius: pr(10px);
+        margin-bottom: pr(20px);
+      }
+      input[type="submit"] {
+        background-image: linear-gradient(90deg, #ff8559 0%, #ffaf5f 100%);
+        box-shadow: 0px pr(8px) pr(10px) 0px rgba(255, 91, 32, 0.15);
+        border-radius: pr(40px);
+        font-size: pr(30px);
+        color: #ffffff;
+      }
+    }
+  }
+}
+.zhy-course {
+  padding: pr(50px) $padding-size 0;
+  .course-cont {
+    .tab-head {
+      margin-bottom: pr(30px);
+      ul {
+        @extend .space-between;
+        padding-top: pr(40px);
+      }
+      li {
+        width: 22%;
+        height: pr(80px);
+        line-height: pr(80px);
+        background-color: #dcdcdc;
+        border-radius: pr(10px);
+        font-size: pr(30px);
+        text-align: center;
+        &.cur {
+          background-color: #ff8559;
+          color: #fff;
+        }
+      }
+    }
+    .tab-detail {
+      box-shadow: 0px 0px pr(21px) 0px rgba(22, 22, 22, 0.15);
+      padding: pr(40px) 0;
+      box-sizing: border-box;
+    }
+    .detail-item {
+      display: none;
+      &.cur {
+        display: block;
+      }
+    }
+    .item-title {
+      font-size: pr(32px);
+      line-height: pr(48px);
+      padding: 0 pr(30px);
+    }
+    .li-title {
+      font-size: pr(28px);
+      font-weight: bold;
+      line-height: pr(48px);
+      color: #666666;
+      &::before {
+        @extend %in-b;
+        content: "";
+        width: pr(9px);
+        height: pr(26px);
+        background-image: linear-gradient(0deg, #ff8559 0%, #ffaf5f 100%);
+        vertical-align: middle;
+        margin-right: pr(10px);
+      }
+      span {
+        vertical-align: middle;
+        color: #333;
+      }
+      em {
+        vertical-align: middle;
+      }
+    }
+    p {
+      padding: 0 pr(30px);
+    }
+    .sc {
+      width: 100%;
+      padding: 0 pr(30px);
+      box-sizing: border-box;
+      white-space: nowrap;
+      overflow-x: scroll;
+      .sc-col {
+        @extend %in-b;
+        width: 26%;
+        border: solid 1px #e6e6e6;
+        text-align: center;
+        padding-bottom: pr(20px);
+        box-sizing: border-box;
+        img {
+          width: 100%;
+        }
+      }
+      span {
+        white-space: normal;
+      }
+    }
+  }
+}
+.zhy-perfect {
+  padding: pr(50px) $padding-size 0;
+  .zhy-subtitle {
+    color: #999999;
+    padding: 0 pr(70px) pr(26px);
+  }
+  .perfect-cont {
+    li {
+      height: pr(233px);
+      color: #ffffff;
+      background: url(https://img.thea.cn/public/platform/thea/202001/hbj/zhy-wap/images/img_1.png) no-repeat;
+      background-size: 100% 100%;
+      padding: pr(48px) 0 pr(10px) pr(277px);
+      box-sizing: border-box;
+      margin-bottom: pr(30px);
+      &:nth-of-type(2) {
+        background: url(https://img.thea.cn/public/platform/thea/202001/hbj/zhy-wap/images/img_2.png) no-repeat;
+        background-size: 100% 100%;
+        padding: pr(46px) 0 pr(10px) pr(97px);
+      }
+      &:nth-of-type(3) {
+        background: url(https://img.thea.cn/public/platform/thea/202001/hbj/zhy-wap/images/img_3.png) no-repeat;
+        background-size: 100% 100%;
+      }
+      &:nth-of-type(4) {
+        background: url(https://img.thea.cn/public/platform/thea/202001/hbj/zhy-wap/images/img_4.png) no-repeat;
+        background-size: 100% 100%;
+        padding: pr(46px) 0 pr(10px) pr(97px);
+      }
+    }
+    .li-title {
+      font-size: pr(32px);
+      font-weight: bold;
+      line-height: pr(32px);
+      margin-bottom: pr(20px);
+    }
+    p {
+      width: pr(390px);
+    }
+  }
+}
+.footer-site {
+  height: pr(100px);
+}
+.zhy-footer {
+  width: pr(750px);
+  height: pr(100px);
+  position: fixed;
+  bottom: 0;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/zhy-wap/images/nav_2.png) no-repeat;
+  background-size: 100% 100%;
+  @extend .space-between;
+  a {
+    width: 33.33%;
+    height: 100%;
+  }
+}
+// 弹窗
+.mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.tc-btn {
+  cursor: pointer;
+}
+
+.tc {
+  display: none;
+  width: pr(560px);
+  border-radius: pr(7px);
+  background: #fff url(https://img.thea.cn/public/platform/thea/201908/ljq/gj-wap/images/tc.png) no-repeat center top;
+  background-size: 100% auto;
+  border-radius: pr(20px);
+  position: fixed;
+  top: 46%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(-46%);
+  z-index: 200;
+  .xl-close {
+    width: pr(80px);
+    height: pr(80px);
+    background: url(https://img.thea.cn/public/platform/thea/201908/ljq/gj-wap/images/xx.png) no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    position: absolute;
+    bottom: pr(-130px);
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  h2 {
+    font-size: pr(36px);
+    color: #fff;
+    margin-bottom: pr(80px);
+  }
+  .tc-box {
+    padding: pr(50px) 0 pr(40px);
+    text-align: center;
+    position: relative;
+  }
+  input[type="text"],
+  select {
+    display: inline-block;
+    width: pr(480px);
+    height: pr(70px);
+    font-size: pr(28px);
+    background-color: #f8f8f8;
+    border-radius: pr(6px);
+    border: solid 1px #cccccc;
+    margin-bottom: pr(24px);
+  }
+  select {
+    background: #fff url(https://img.thea.cn/public/platform/thea/201908/ljq/gj-wap/images/tri.png) no-repeat 95% center;
+    background-size: pr(20px) auto;
+  }
+  input[type="submit"] {
+    display: inline-block;
+    width: pr(480px);
+    height: pr(70px);
+    background-color: #f88531;
+    font-size: pr(32px);
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
   }
 }
